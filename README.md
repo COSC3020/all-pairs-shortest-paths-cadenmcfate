@@ -29,3 +29,7 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer
+
+The initialization of the dist matrix is an operation of $|V|^2$ complexity. Incorporating the weights of each edge into the matrix is an operation of $|E|$ complexity. The triple-for-loop that ensures the lightest path is found is an operation of $|V|^3$ complexity. So the worst-case time complexity of this algorithm if $\Theta(|V|^3+|V|^2+|E|)$.
